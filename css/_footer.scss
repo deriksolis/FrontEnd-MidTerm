@@ -15,7 +15,11 @@
         margin-top: 70px;
         flex-direction: column;
         justify-content: space-between;
-        color: white;
+        li {
+            color: white;
+            font: 16px/33px 'RVMontserrat', sans-serif;
+            letter-spacing: 1.14px;    
+        }
     }
     &__right-nav {
         display: flex;
@@ -30,6 +34,7 @@
     &__bottom-nav {
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100%;
         color: white;
         margin-bottom: 0;
@@ -37,8 +42,9 @@
         li {
             margin: 0 20px;
             border-left: 1px solid white;
-            height: 1rem;
             padding-left: 20px;
+            font: lighter 14px/24px 'RVMontserrat', sans-serif;
+            letter-spacing: 1px;
             &:first-child {
                 border-left: none;
                 }

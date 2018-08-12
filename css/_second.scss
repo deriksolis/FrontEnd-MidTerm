@@ -60,6 +60,17 @@
     > p {
         font-size: .7rem;
     }
+    > .by-mymove {
+        font: bold 12px/24px 'RVMontserrat', sans-serif;
+            color: #424242;
+            letter-spacing: 0.86px;
+        }
+        > span {
+            font: 12px/24px 'RVMontserrat', sans-serif;
+            color: #757575;
+            letter-spacing: 0.86px;
+            line-height: 24px;
+        }
 }
 
 .hugeList {
@@ -94,6 +105,7 @@
     margin: 0 0 100px -101px;
     height: 611px;
     flex-wrap: wrap;
+    display: flex;
     > h3 {
         width: 100%;
         font: 24px/32px Tahoma, sans-serif;

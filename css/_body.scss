@@ -1,5 +1,9 @@
 ///// main
 
+* {
+    box-sizing: border-box;
+}
+
 .container {
     width: 1170px;
     margin: 40px auto;
@@ -84,6 +88,15 @@
             margin: 0;
             color: rgba(0, 0, 0, .8);
         }
+        .moving-border-radius {
+            display: block;
+            border:  1px solid $moving-button-color;
+            width: 92px;
+            text-align: center;
+            border-radius: 12px;
+            font: 12px'RVMontserrat', sans-serif !important;
+            color: #3949AB;
+        }
         div {
             border-top: 1px solid rgba(128, 128, 128, 0.158);
             margin-top: auto;
@@ -91,7 +104,7 @@
             width: 100%;
             padding-top: 20px;
         }
-        &__bottom-part {
+        &_-bottom-part {
             border-top: 1px solid rgba(128, 128, 128, 0.158);
             display: flex;
             font-size: .8rem;
@@ -101,9 +114,21 @@
             > img {
                 margin-right: 10px;
             }
+            > .by-mymove {
+                font: bold 12px/24px 'RVMontserrat', sans-serif;
+                    color: #424242;
+                    letter-spacing: 0.86px;
+                > span {
+                    font: 12px/24px 'RVMontserrat', sans-serif;
+                    color: #757575;
+                    letter-spacing: 0.86px;
+                    line-height: 24px;
+                }
+            }
         }
     }
 }
+
 
 
 .bottom-section {
@@ -127,21 +152,33 @@
         p {
             font: 14px/19px Georgia, sans-serif;
         }
-        &__top-part {
+
+        &_-top-part {
             padding: 30px 30px 0 30px;
         }
 
         &_-bottom-part {
             border-top: 1px solid rgba(128, 128, 128, 0.158);
-            padding: 20px 31px;
             display: flex;
-            font-size: .8rem;
             position: absolute;
-            width: 100%;
             bottom: 0;
-
+            width: 100%;
+            align-items: center;
+            padding: 10px 180px 10px 31px;
             > img {
                 margin-right: 10px;
+            }
+
+            .by-mymove {
+                font: bold 12px/24px 'RVMontserrat', sans-serif;
+                    color: #424242;
+                    letter-spacing: 0.86px;
+                > span {
+                    font: 12px/24px 'RVMontserrat', sans-serif;
+                    color: #757575;
+                    letter-spacing: 0.86px;
+                    line-height: 24px;
+                }
             }
         }
     }
@@ -168,6 +205,8 @@
         color: white;
         font-size: .8rem;
         border: none;
+        font: bold 14px/14px 'RVMontserrat', sans-serif;
+        letter-spacing: 0.24px;
     }
     > hr {
         width: 401px;
@@ -176,4 +215,8 @@
         border: 0;
         border-top: 1px solid rgba(128, 128, 128, 0.158);
     }
+}
+
+.capitalize {
+    text-transform: uppercase;
 }
